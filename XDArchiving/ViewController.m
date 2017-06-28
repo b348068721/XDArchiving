@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XDArchiving.h"
 #import "XDEvent.h"
+#import "XDArchivieByDelegate.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -29,10 +30,11 @@
     [[XDArchiving singleton] saveEventWithRandomValue:str timesTampEvent:str networkStatus:str userIDClass:str userID:str category:str action:str label:str value:0 customParams:@[str]];
 }
 - (IBAction)readPressed:(id)sender {
+    [[XDArchivieByDelegate singleton]startWithUrlString:[[XDArchiving singleton]filePath]];
     NSArray * arr = [[XDArchiving singleton]searchEvent];
     NSString *str = @"0";
     for (XDEvent * event in arr) {
-        str = [NSString stringWithFormat:@"%@,%@",str,event.networkStatus];
+        str = [NSString stringWithFormat:@"%@,%@",str,event.category];
     }
     self.textView.text = str;
 }

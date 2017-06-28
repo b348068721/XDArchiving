@@ -18,4 +18,6 @@
 - (void)removeEvent:(NSArray *)array withlimitCount:(NSInteger)count;
 
 - (void)removeCustomEvent:(NSArray *)array;
+
+- (NSString *)filePath;
 @end

@@ -17,6 +17,7 @@
 		C82A843B1EFB9D99003DD915 /* XDArchivingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A843A1EFB9D99003DD915 /* XDArchivingUITests.m */; };
 		C82A844C1EFB9DB4003DD915 /* XDArchiving.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A84491EFB9DB4003DD915 /* XDArchiving.m */; };
 		C82A844D1EFB9DB4003DD915 /* XDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C82A844B1EFB9DB4003DD915 /* XDEvent.m */; };
+		C863DA7F1F0397FD00419F44 /* XDArchivieByDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C863DA7E1F0397FD00419F44 /* XDArchivieByDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C82A84491EFB9DB4003DD915 /* XDArchiving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDArchiving.m; sourceTree = "<group>"; };
 		C82A844A1EFB9DB4003DD915 /* XDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDEvent.h; sourceTree = "<group>"; };
 		C82A844B1EFB9DB4003DD915 /* XDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDEvent.m; sourceTree = "<group>"; };
+		C863DA7D1F0397FD00419F44 /* XDArchivieByDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDArchivieByDelegate.h; sourceTree = "<group>"; };
+		C863DA7E1F0397FD00419F44 /* XDArchivieByDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDArchivieByDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 			children = (
 				C82A84481EFB9DB4003DD915 /* XDArchiving.h */,
 				C82A84491EFB9DB4003DD915 /* XDArchiving.m */,
+				C863DA7D1F0397FD00419F44 /* XDArchivieByDelegate.h */,
+				C863DA7E1F0397FD00419F44 /* XDArchivieByDelegate.m */,
 				C82A844A1EFB9DB4003DD915 /* XDEvent.h */,
 				C82A844B1EFB9DB4003DD915 /* XDEvent.m */,
 			);
@@ -292,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C863DA7F1F0397FD00419F44 /* XDArchivieByDelegate.m in Sources */,
 				C82A841D1EFB9D98003DD915 /* ViewController.m in Sources */,
 				C82A841A1EFB9D98003DD915 /* AppDelegate.m in Sources */,
 				C82A844D1EFB9DB4003DD915 /* XDEvent.m in Sources */,
@@ -447,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2CV2P47Q4S;
 				INFOPLIST_FILE = XDArchiving/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winter.XDArchiving;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2CV2P47Q4S;
 				INFOPLIST_FILE = XDArchiving/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = winter.XDArchiving;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +538,7 @@
 				C82A84411EFB9D99003DD915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C82A84421EFB9D99003DD915 /* Build configuration list for PBXNativeTarget "XDArchivingTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +547,7 @@
 				C82A84441EFB9D99003DD915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C82A84451EFB9D99003DD915 /* Build configuration list for PBXNativeTarget "XDArchivingUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +556,7 @@
 				C82A84471EFB9D99003DD915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
